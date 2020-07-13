@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> HTML 피아노</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css 스타일시트 파일 지정 -->
+ 
+	<p>피아노 건반 </p>
+	<p>F4/F5 </p>
+		 
+</head>
+<body>
+	<noscript> Javascript를 확인하세요. </noscript>
+	<!-- 스크립트 에러 명시 -->
+	<div class="white_key_box">
+	  <!-- *F4 WHITE KEY -->
+        <div data-key="90" class="key">
+          <kbd>Z</kbd>
+        </div>
+		<!--C3-->	
+        <div data-key="88" class="key">
+          <kbd>X</kbd>       
+        </div>
+		<!--D3-->
+        <div data-key="67" class="key">
+          <kbd>C</kbd>
+        </div>
+		<!--E3-->
+        <div data-key="86" class="key">
+          <kbd>V</kbd>
+        </div>
+		<!--F3-->
+        <div data-key="66" class="key">
+          <kbd>B</kbd>
+        </div>
+		<!--G3-->
+        <div data-key="78" class="key">
+          <kbd>N</kbd>
+        </div>
+		<!--A3-->
+        <div data-key="77" class="key">
+          <kbd>M</kbd>
+        </div>
+		<!--B3-->
+		
+	  <!-- *F5 WHITE KEY -->
+		<div data-key="89" class="key">
+          <kbd>Y</kbd>
+		  
+        </div>
+		<!--C4-->
+        <div data-key="85" class="key">
+          <kbd>U</kbd>
+        </div>
+		<!--D4-->
+        <div data-key="73" class="key">
+          <kbd>I</kbd>
+        </div>
+		<!--E4-->
+        <div data-key="79" class="key">
+          <kbd>O</kbd>
+        </div>
+		<!--F4-->
+        <div data-key="80" class="key">
+          <kbd>P</kbd>
+        </div>
+		<!--G4-->
+        <div data-key="219" class="key">
+          <kbd>[</kbd>
+        </div>
+		<!--A4-->
+        <div data-key="221" class="key">
+          <kbd>]</kbd>
+        </div>
+		<!--B4-->
+    </div>
+	
+    <div class="black_key_row">
+     <div class="black_key_box">	  
+		<!-- *F4 BLACK KEY -->	  
+          <div data-key="83" class="key blacked">
+            <kbd>S</kbd>
+          </div>
+		  <!--Db3-->		  
+		  <div id="gap1">
+          </div>
+		  <!--small_gap-->
+          <div data-key="68" class="key blacked">
+            <kbd>D</kbd> 
+          </div>	 
+		  <!--Eb3-->			  
+ 		  <div id="gap2">
+          </div>
+		  <!--mid_gap-->
+          <div data-key="71" class="key blacked">
+            <kbd>G</kbd>       
+          </div>
+		  <!--Gb3-->
+	  	  <div id="gap1">
+          </div>
+		  <!--small_gap-->
+          <div data-key="72" class="key blacked">
+            <kbd>H</kbd>      
+          </div>
+		  <!--Ab3-->
+		  <div id="gap1">
+          </div>
+		  <!--small_gap-->
+          <div data-key="74" class="key blacked">
+            <kbd>J</kbd> 			
+		  </div>
+		  <!--Bb3-->
+		  <div id="gap2">
+          </div>  
+		  <!--mid_gap-->
+		  <div data-key="55" class="key blacked">
+            <kbd>7</kbd>	  
+          </div>
+		  <!--Db4-->
+		  <div id="gap1">
+          </div>
+		  <!--small_gap-->
+		  <div data-key="56" class="key blacked">
+            <kbd>8</kbd>		  
+          </div>	
+		  <!--Eb4-->
+	  	  <div id="gap2">
+          </div>
+		  <!--mid_gap-->
+		  <div data-key="48" class="key blacked">
+            <kbd>0</kbd>
+		  </div>
+		  <!--Gb4-->
+		  <div id="gap1">
+          </div>
+		  <!--small_gap-->
+		  <div data-key="189" class="key blacked">
+            <kbd>-</kbd>		  
+          </div>
+		  <!--Ab4-->
+		  <div id="gap1">
+          </div>
+		  <!--small_gap-->
+		  <div data-key="187" class="key blacked">
+            <kbd>=</kbd>		  
+          </div>
+		  <!--Bb4-->	  		  
+        </div>
+      </div>
+	  
+
+		 
+  <!-- F4 WHITE KEY 사운드 지정 -->
+  <audio data-key="90" src="sounds/C3.ogg" preload="auto"></audio>
+  <audio data-key="88" src="sounds/D3.ogg" preload="auto"></audio>  
+  <audio data-key="67" src="sounds/E3.ogg" preload="auto"></audio> 
+  <audio data-key="86" src="sounds/F3.ogg" preload="auto"></audio> 
+  <audio data-key="66" src="sounds/G3.ogg" preload="auto"></audio> 
+  <audio data-key="78" src="sounds/A3.ogg" preload="auto"></audio> 
+  <audio data-key="77" src="sounds/B3.ogg" preload="auto"></audio> 
+  
+  <!-- F5 WHITE KEY 사운드 지정 -->
+  <audio data-key="89" src="sounds/C4.ogg" preload="auto"></audio>
+  <audio data-key="85" src="sounds/D4.ogg" preload="auto"></audio>  
+  <audio data-key="73" src="sounds/E4.ogg" preload="auto"></audio> 
+  <audio data-key="79" src="sounds/F4.ogg" preload="auto"></audio> 
+  <audio data-key="80" src="sounds/G4.ogg" preload="auto"></audio> 
+  <audio data-key="219" src="sounds/A4.ogg" preload="auto"></audio> 
+  <audio data-key="221" src="sounds/B4.ogg" preload="auto"></audio> 
+
+  <!-- F4 BLACK KEY 사운드 지정 -->
+  <audio data-key="83" src="sounds/Db3.ogg" preload="auto"></audio> 
+  <audio data-key="68" src="sounds/Eb3.ogg" preload="auto"></audio>
+  <audio data-key="71" src="sounds/Gb3.ogg" preload="auto"></audio> 
+  <audio data-key="72" src="sounds/Ab3.ogg" preload="auto"></audio> 
+  <audio data-key="74" src="sounds/Bb3.ogg" preload="auto"></audio> 
+  
+  <!-- F5 BLACK KEY 사운드 지정 -->
+  <audio data-key="55" src="sounds/Db4.ogg" preload="auto"></audio> 
+  <audio data-key="56" src="sounds/Eb4.ogg" preload="auto"></audio>
+  <audio data-key="48" src="sounds/Gb4.ogg" preload="auto"></audio> 
+  <audio data-key="189" src="sounds/Ab4.ogg" preload="auto"></audio> 
+  <audio data-key="187" src="sounds/Bb4.ogg" preload="auto"></audio> 
+
+  <script src="js/script.js"></script>
+  <!-- 스크립트 호출 -->
+   
+   
+</body>
+</html>
